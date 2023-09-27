@@ -1,0 +1,116 @@
+#dashboard-container {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+}
+
+#add-employee-form,
+#edit-form {
+  /* border: 1px solid blue; */
+  display: grid;
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+#add-employee-form input,
+#add-employee-form select,
+#add-employee-form button,
+#edit-form input,
+#edit-form select,
+#edit-form button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}
+
+#employee-table {
+  margin-top: 40px;
+}
+
+#employee-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17px;
+}
+
+#employee-table table th,
+#employee-table table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#employee-table table th {
+  font-weight: bold;
+}
+
+table tbody tr {
+  transition: background-color 0.5s ease;
+}
+
+#employee-table table tbody tr:hover {
+  background-color: #202020;
+}
+
+#employee-table table #delete-button {
+  background-color: #530a0a;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#employee-table table #edit-button {
+  background-color: #4caf50;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#employee-table table button:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.pagination button.active {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(252, 252, 252, 0.35) 0px 5px 15px;
+}
+
+#filter-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  align-items: center;
+}
+
+#filter-container input,
+#filter-container select {
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+}
